@@ -1,23 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"class="nav-no-js">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/normalize.min.css">
+    <link rel="stylesheet" href="./css/defaults.min.css">
+    <link rel="stylesheet" href="./css/nav-core.min.css">
+    <link rel="stylesheet" href="./css/nav-layout.min.css">
+
   </head>
   <body>
-    <nav>
-      <h2 id="logo">Dominik Auer</h2>
-      <ul class="navigation-items">
-        <li class="navigation-item"><a href="#about-me">About Me</a></li>
-        <li class="navigation-item"><a href="#projects">Projects</a></li>
-        <li class="navigation-item"><a href="#skills">Skills</a></li>
-        <li class="navigation-item"><a href="/contact.html">Contact</a></li>
-      </ul>
-    </nav>
 
+    <a href="#" class="nav-button">Menu</a>
+
+    <nav class="nav">
+      <ul>
+          <li><a href="#">Home</a></li>
+          <li class="nav-submenu"><a href="#">About Me</a>
+             <ul>
+                <li><a href="#">Me</a></li>
+                <li><a href="#">Projects </a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Project Management</a></li>
+            </ul>
+          </li>
+          <li class="nav-submenu"><a href="./Sailing.html">Sailing</a>
+              <ul>
+                  <li><a href="#">Yngling</a></li>
+                  <li><a href="#">Americas Cup</a></li>
+                  <li><a href="#">Vendee Globe</a></li>
+                  <li><a href="#">Seerettung</a></li>
+                  <li><a href="#">Offshore Sailing</a></li>
+              </ul>
+          </li>
+          <li class="nav-submenu"><a href="#">Music</a>
+              <ul>
+                <li><a href="#">Piano/ Keyboard</a></li>
+                <li><a href="#">Singing</a></li>
+                <li><a href="#">Samples</a></li>
+                <li><a href="#">Notes</a></li>
+                <li><a href="#">Music Production</a></li>
+                <li><a href="#">Booking</a></li>
+                <li><a href="#">Alti Moschti</a></li>
+                <li><a href="#">Presswerk</a></li>
+              </ul>
+          </li>        
+          <li class="nav-submenu"><a href="#">Travel</a>
+              <ul>
+                  <li><a href="#">Australia</a></li>
+                  <li><a href="#">Antarctica</a></li>
+                  <li><a href="#">New Zeland</a></li>
+              </ul>
+          </li>
+          <li><a href="./contact.html">Contact</a></li>
+      </ul>
+  </nav>
+ 
     <main>
       <section id="about-me">
         <div class="about-me-container">
@@ -52,94 +93,6 @@
         </div>
       </section>
 
-      <section id="projects">
-        <h2>Sailing Projects</h2>
-        <details class="project">
-          <summary class="project-title">
-            <h3>2020</h3>
-          </summary>
-          <img
-            src="./img/Ascona_SM_2020.JPG"
-            alt="Yngling Schweizermeisterschaft 2020"
-            class="project-image"
-          />
-          <p class="project-description">
-            Yngling Schweizermeisterschaft Ascona Rang 4!
-            Yngling-Cup Schlussrangliste Platz 4! Nach 2 gesegelten Regatten.
-          </p>
-        </details>
-        <details class="project">
-          <summary class="project-title">
-            <h3>2019</h3>
-          </summary>
-          <img
-          src="./img/Thun_9_2019.jpg"
-            alt="Yngling Cup 5 2019"
-            class="project-image"
-          />
-          <p class="project-description">
-            Yngling-Cup Reagatta 5 Thun (TYC)!
-            Yngling-Cup Schlussrangliste Platz 3 nach 6 gesegelten Regatten in der Schweiz!
-          </p>
-        </details>
-        <details class="project">
-          <summary class="project-title">
-            <h3>2018</h3>
-          </summary>
-          <img
-            src="./img/yngling_springtime_2017.jpg"
-            alt='Yngling European Springtime Championchip'
-            class="project-image"
-          />
-          <p class="project-description">
-           WM in Sneek/Holland Platz 23!
-           Ynglig-Cup Vorschoter Platz 3
-          </p>
-        </details>
-        <details class="project">
-          <summary class="project-title">
-            <h3>2017</h3>
-          </summary>
-          <img
-            src="./img/yngling_springtime_2017.jpg"
-            alt='Yngling European Springtime Championchip'
-            class="project-image"
-          />
-          <p class="project-description">
-           WM in Sneek/Holland Platz 23!
-           Ynglig-Cup Vorschoter Platz 3
-          </p>
-        </details>
-        <details class="project">
-          <summary class="project-title">
-            <h3>2016</h3>
-          </summary>
-          <img
-            src="./img/yngling_springtime_2017.jpg"
-            alt='Yngling European Springtime Championchip'
-            class="project-image"
-          />
-          <p class="project-description">
-           WM in Sneek/Holland Platz 23!
-           Ynglig-Cup Vorschoter Platz 3
-          </p>
-        </details>
-        <details class="project">
-          <summary class="project-title">
-            <h3>2015</h3>
-          </summary>
-          <img
-            src="./img/yngling_springtime_2017.jpg"
-            alt='Yngling European Springtime Championchip'
-            class="project-image"
-          />
-          <p class="project-description">
-           WM in Sneek/Holland Platz 23!
-           Ynglig-Cup Vorschoter Platz 3
-          </p>
-        </details>
-      </section>
-
       <section id="skills">
         <h2>Skills</h2>
         <div id="skills-container">
@@ -162,7 +115,7 @@
     </main>
 
     <footer>Made with <span class="heart">♥</span> in Arbon</footer>
-  </body>
+
   <script>
     const timeContainer = document.getElementById("time-container");
     const BIRTH_DAY = "12-10-1815";
@@ -178,4 +131,9 @@
       timeContainer.innerText = intlNumberFormatter.format(difference);
     }, 1000);
   </script>
+  <script src="./js/nav.jquery.min.js"></script>
+<script>
+    $('.nav').nav();
+</script>
+</body>
 </html>
