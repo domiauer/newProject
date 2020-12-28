@@ -1,23 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"class="nav-no-js">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/normalize.min.css">
+    <link rel="stylesheet" href="./css/defaults.min.css">
+    <link rel="stylesheet" href="./css/nav-core.min.css">
+    <link rel="stylesheet" href="./css/nav-layout.min.css">
+
   </head>
   <body>
-    <nav>
-      <h2 id="logo">Dominik Auer</h2>
-      <ul class="navigation-items">
-        <li class="navigation-item"><a href="#about-me">About Me</a></li>
-        <li class="navigation-item"><a href="#projects">Projects</a></li>
-        <li class="navigation-item"><a href="#skills">Skills</a></li>
-        <li class="navigation-item"><a href="/contact.html">Contact</a></li>
-      </ul>
-    </nav>
 
+    <a href="#" class="nav-button">Menu</a>
+
+    <nav class="nav">
+      <ul>
+          <li><a href="#">Home</a></li>
+          <li class="nav-submenu"><a href="#">About Me</a>
+             <ul>
+                <li><a href="#">Me</a></li>
+                <li><a href="#">Projects </a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Project Management</a></li>
+            </ul>
+          </li>
+          <li class="nav-submenu"><a href="./Sailing.html">Sailing</a>
+              <ul>
+                  <li><a href="#">Yngling</a></li>
+                  <li><a href="#">Americas Cup</a></li>
+                  <li><a href="#">Vendee Globe</a></li>
+                  <li><a href="#">Seerettung</a></li>
+                  <li><a href="#">Offshore Sailing</a></li>
+              </ul>
+          </li>
+          <li class="nav-submenu"><a href="#">Music</a>
+              <ul>
+                <li><a href="#">Piano/ Keyboard</a></li>
+                <li><a href="#">Singing</a></li>
+                <li><a href="#">Samples</a></li>
+                <li><a href="#">Notes</a></li>
+                <li><a href="#">Music Production</a></li>
+                <li><a href="#">Booking</a></li>
+                <li><a href="#">Alti Moschti</a></li>
+                <li><a href="#">Presswerk</a></li>
+              </ul>
+          </li>        
+          <li class="nav-submenu"><a href="#">Travel</a>
+              <ul>
+                  <li><a href="#">Australia</a></li>
+                  <li><a href="#">Antarctica</a></li>
+                  <li><a href="#">New Zeland</a></li>
+              </ul>
+          </li>
+          <li><a href="./contact.html">Contact</a></li>
+      </ul>
+  </nav>
+ 
     <main>
       <section id="about-me">
         <div class="about-me-container">
@@ -45,58 +86,11 @@
             </p>
           </div>
           <img
-            src="./img/actesy_dominik_auer_businegss.jpg"
+            src="./img/actesy_dominik_auer_business.jpg"
             alt="A photo of Dominik Auer"
             class="portrait"
           />
         </div>
-      </section>
-
-      <section id="projects">
-        <h2>Projects</h2>
-        <details class="project">
-          <summary class="project-title">
-            <h3>The first computer program</h3>
-          </summary>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Diagram_for_the_computation_of_Bernoulli_numbers.jpg/220px-Diagram_for_the_computation_of_Bernoulli_numbers.jpg"
-            alt="Lovelace's diagram from note G, the first published computer
-          algorithm"
-            class="project-image"
-          />
-          <p class="project-description">
-            The world's first computer program for computing Bernoulli numbers.
-          </p>
-        </details>
-        <details class="project">
-          <summary class="project-title">
-            <h3>The Analytical Engine</h3>
-          </summary>
-          <img
-            src="https://images2.minutemediacdn.com/image/upload/c_fit,f_auto,fl_lossy,q_auto,w_728/v1555925585/shape/mentalfloss/analyticalmachine_babbage_london.jpg?itok=5vRTwQjb"
-            alt="An original model of part of the Analytical Engine"
-            class="project-image"
-          />
-          <p class="project-description">
-            I helped Charles Babbage on topics ranging from math to computation
-            that helped the development of the Analytical Engine.
-          </p>
-        </details>
-        <details class="project">
-          <summary class="project-title">
-            <h3>The Ada programming language</h3>
-          </summary>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Ada_Mascot_with_slogan.svg/220px-Ada_Mascot_with_slogan.svg.png"
-            alt='Ada mascot, a black and cobalt blue hummingbird, flying above the
-          slogan "Time-tested, safe and secure"'
-            class="project-image"
-          />
-          <p class="project-description">
-            My work inspired the United States Department of Defense to name
-            their new programming language after me.
-          </p>
-        </details>
       </section>
 
       <section id="skills">
@@ -121,7 +115,7 @@
     </main>
 
     <footer>Made with <span class="heart">♥</span> in Arbon</footer>
-  </body>
+
   <script>
     const timeContainer = document.getElementById("time-container");
     const BIRTH_DAY = "12-10-1815";
@@ -137,4 +131,9 @@
       timeContainer.innerText = intlNumberFormatter.format(difference);
     }, 1000);
   </script>
+  <script src="./js/nav.jquery.min.js"></script>
+<script>
+    $('.nav').nav();
+</script>
+</body>
 </html>

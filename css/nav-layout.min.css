@@ -1,0 +1,327 @@
+@font-face {
+    font-family: icon-font;
+    src: url(../fonts/icon-font.eot);
+    src: url(../fonts/icon-font.eot?#iefix) format('eot'), url(../fonts/icon-font.woff) format('woff'), url(../fonts/icon-font.ttf) format('truetype'), url(../fonts/icon-font.svg#icon-font) format('svg')
+}
+
+.icon-desktop:before,
+.icon-menu-close:before,
+.icon-menu:before,
+.icon-mobile:before,
+.icon-submenu-down:before,
+.icon-submenu-right:before,
+.icon-world:before,
+.nav .nav-submenu>a:after,
+.nav .nav-submenuright>a:after,
+.nav-button:before,
+.nav-close:before,
+.nav>ul>.nav-submenu>a:after,
+.nav>ul>.nav-submenuright>a:after,
+header h1:before {
+    font-family            : icon-font;
+    -webkit-font-smoothing : antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-style             : normal;
+    font-variant           : normal;
+    font-weight            : 400;
+    text-decoration        : none;
+    text-transform         : none;
+    vertical-align         : top
+}
+
+.icon-desktop:before {
+    content: "\E001"
+}
+
+.icon-menu-close:before {
+    content: "\E002"
+}
+
+.icon-menu:before {
+    content: "\E003"
+}
+
+.icon-mobile:before {
+    content: "\E004"
+}
+
+.icon-submenu-down:before {
+    content: "\E005"
+}
+
+.icon-submenu-right:before {
+    content: "\E006"
+}
+
+.icon-world:before {
+    content: "\E007"
+}
+
+body {
+    padding-top: 4.4rem
+}
+
+header {
+    display     : block;
+    position    : fixed;
+    top         : 0;
+    left        : 0;
+    right       : 0;
+    z-index     : 901;
+    padding-left: 10px;
+    line-height : 0.5rem;
+    background  : #c6c6c6;
+}
+#logonav, img.nav-small {
+    height: 3em;
+    float:left;
+    width: auto;
+}
+#buttonnav, img.nav-small {
+
+    float: right;
+    padding-top: 4.5px;
+    
+}
+
+header h1:before {
+    content     : "\E004";
+    margin-right: 8px
+}
+.material-icons.navsmall {
+    color: #545454; 
+    margin-top: 5px;
+}
+
+.nav-button,
+.nav-close {
+    position       : fixed;
+    top            : 0;
+    width          : 2.4rem;
+    height         : 3rem;
+    overflow       : hidden;
+    z-index        : 902;
+    cursor         : pointer;
+    text-decoration: none;
+    line-height    : 3rem;
+    background     : #c6c6c6;
+}
+
+.nav-button:before,
+.nav-close:before {
+    display   : block;
+    text-align: center
+}
+
+.nav-button {
+    display  : block;
+    right    : 5rem;
+    margin-top: 5px;
+    font-size: 1.7rem;
+    
+}
+
+.nav-button:before {
+    content: "\E003";
+    justify-content: center;
+}
+
+.nav-close {
+    display  : none;
+    right    : 4rem;
+    font-size: 1.9rem
+}
+
+.nav-close:before {
+    content: "\E002"
+}
+
+.nav {
+    padding-top: 4.4rem;
+    line-height: 4rem;
+    background : #c6c6c6;
+}
+
+.nav ul {
+    border-radius: 0;
+    background   : #f1f1f1 !important;
+}
+
+.nav ul ul {
+    background: #f1f1f1 !important;
+}
+
+.nav ul ul ul {
+    background: #382f29
+}
+
+.nav ul ul ul ul {
+    background: #382f29
+}
+
+.nav ul ul ul ul ul {
+    background: #493e36
+}
+
+.nav li {
+    border-top: 1px solid #59544F;
+    cursor    : pointer
+}
+
+.nav li.nav-active>a,
+.nav li:hover>a {
+    color     : #000036;
+    background: #c6c6c6;
+}
+
+.nav .nav-submenu>ul {
+    margin-left: 10px;
+    min-width: 120px;
+}
+
+.nav .nav-submenu>a {
+    padding-right: 30px !important
+}
+.nav .nav-submenuright {
+   display: none;
+
+}
+.nav .nav-submenuright>ul {
+    margin-right: 10px;
+    float: right;
+}
+
+.nav .nav-submenuright>a {
+    padding-right: 30px !important;
+    float: right;
+}
+
+
+.nav a,
+.nav a:active,
+.nav a:hover,
+.nav a:visited {
+    border-radius  : 0px;
+    padding        : 0 15px 1px;
+    color          : #545454;
+    text-decoration: none;
+    min-width: 120px;
+}
+
+.nav .nav-submenu>a:after {
+    position: absolute;
+    display : block;
+    right   : 10px;
+    top     : 1px;
+    content : "\E005"
+}
+.nav .nav-submenuright>a:after {
+    position: absolute;
+    display : block;
+    right   : 10px;
+    top     : 1px;
+}
+.workplace {
+    margin: 20px 20px;
+}
+
+@media only screen and (min-width:1650px) {
+    body {
+        padding: 0 !important
+    }
+
+    header {
+        position: relative;
+        visibility: collapse;
+        display: none;
+    }
+
+    header h1:before {
+        content: "\E001";
+       
+    }
+    .nav-button {
+        display: none
+    }
+    .nav-logout img {
+        display: none;
+    }
+
+    .nav {
+        padding: 0 !important;
+
+    }
+
+    .nav>ul>li {
+        border-top: none
+    }
+
+    .nav li>ul {
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, .75)
+    }
+
+    .nav ul ul ul {
+        border-radius: 0 6px 6px
+    }
+
+    .nav ul ul ul li:first-child {
+        border-top: none
+    }
+
+    .nav .nav-left>ul {
+        border-radius: 6px 0 6px 6px
+    }
+
+    .nav .nav-submenu li {
+        min-width: 110px;
+        line-height: 3rem;
+    }
+
+    .nav .nav-submenu>ul {
+        margin: 0
+    }
+
+    .nav>ul>.nav-submenu>a:after {
+        content: "\E005"
+    }
+
+    .nav .nav-submenu>a:after {
+        content: "\E006"
+    }
+
+    .nav .nav-submenuright {
+        float: right;
+        display: block;
+    }
+    .nav .nav-submenuright li {
+        min-width: 110px;   
+    }
+    #logo img  {
+        height: 3em;
+        float: right;    
+    }
+    #icon-nav img {
+        width: 32px;
+        margin: 10px 0;
+        float: right;
+   
+    }
+    .material-icons.md-36 {
+       font-size: 36px;
+       padding-top: 3px;
+       color: #545454;
+    }
+    .nav .nav-submenuright>ul {
+        margin: 0;
+        float: right;
+    }
+
+    .nav>ul>.nav-submenuright>a:after {
+        content: "\E005"
+    }
+
+    .nav .nav-submenuright>a:after {
+        content: "\E006"
+    }
+
+}
